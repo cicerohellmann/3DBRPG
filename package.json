@@ -1,0 +1,19 @@
+{
+  "name": "3DBRPG",
+  "version": "0.0.1",
+  "description": "A board 3D RPG",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "3D",
+    "Board",
+    "RPG"
+  ],
+  "author": "C. Hellmann",
+  "devDependencies": {
+    "electron": "^8.2.4"
+  }
+}
