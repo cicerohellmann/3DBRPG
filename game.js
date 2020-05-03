@@ -8,7 +8,7 @@ var renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false } );
 renderer.setClearColor(0x000000, 0);
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
-var baseScene = new Board();
+var baseScene = new BoardView();
 
 var init = function(){
     window.addEventListener('resize',function()
@@ -43,11 +43,14 @@ var render = function(){
     }
 }
 
-var GameLoop = function(ts){
-    requestAnimationFrame( GameLoop );
-    update(delta);
+var GameLoop = function(){
+    update(delta.getDelta());
     render();
+    requestAnimationFrame( GameLoop );
+
 };
+
+var lastRender = 0
 
 init();
 GameLoop();
