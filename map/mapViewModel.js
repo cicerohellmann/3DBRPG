@@ -1,8 +1,6 @@
 class MapViewModel {
     constructor(map_){
     	this.map = map_;
-
-    	// This should be loaded later
     }
 
     drawMatrix = () =>{

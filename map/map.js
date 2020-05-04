@@ -1,6 +1,16 @@
 class Map {
     constructor(s_, o_, q_, z_, a_, w_, x_, d_, i_, e_){
-    	var s = s_;
+        this.s = s_;
+        this.o = o_;
+        this.q = q_;
+        this.z = z_;
+        this.a = a_;
+        this.w = w_;
+        this.x = x_;
+        this.d = d_;
+        this.i = i_;
+        this.e = e_;
+    	  var s = s_;
         var o = o_;
         var q = q_;
         var z = z_; 
