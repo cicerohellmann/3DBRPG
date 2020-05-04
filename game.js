@@ -25,7 +25,7 @@ var init = function(){
     document.body.appendChild( renderer.domElement );
 
     camera.updateMatrixWorld();
-    camera.position.set( 0, 0, 10 );
+    camera.position.set( 20, 20, 10 );
     camera.lookAt( 0, 0, 0 );
 };
 
