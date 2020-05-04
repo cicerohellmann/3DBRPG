@@ -3,13 +3,11 @@ class MapViewModel {
     	this.map = map_;
 
     	// This should be loaded later
-    	this.floor = this.map.floor;
-    	this.things = this.map.things;
     }
 
     drawMatrix = () =>{
-        this.drawMap(this.floor, 0, this.floorContent);
-        this.drawMap(this.things, 1, this.objectContent);
+        this.drawMap(this.map.floor, 0, this.floorContent);
+        this.drawMap(this.map.things, 1, this.objectContent);
     }
 
     drawMap = (mapArray, y, content) => {
