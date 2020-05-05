@@ -50,7 +50,5 @@ var GameLoop = function(){
 
 };
 
-var lastRender = 0
-
 init();
 GameLoop();
